@@ -4,11 +4,11 @@ resource "kubernetes_namespace" "keda" {
 
   metadata {
     name = var.namespace
-  }
 
-  labels = {
-    "app.kubernetes.io/name"    = var.helm_chart_release_name
-    "app.kubernetes.io/part-of" = "keda-operator"
-    "app.kubernetes.io/version" = var.helm_chart_version
+    labels = {
+      "app.kubernetes.io/name"    = var.helm_chart_release_name
+      "app.kubernetes.io/part-of" = "keda-operator"
+      "app.kubernetes.io/version" = var.helm_chart_version
+    }
   }
 }
