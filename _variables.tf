@@ -5,7 +5,7 @@ variable "enabled" {
 
 variable "helm_chart_name" {
   type        = string
-  default     = "kedacore/keda"
+  default     = "keda"
   description = "Keda chart name."
 }
 
@@ -23,7 +23,7 @@ variable "helm_chart_repo" {
 
 variable "helm_chart_version" {
   type        = string
-  default     = "2.2.1"
+  default     = "2.4.0"
   description = "keda chart version."
 }
 
