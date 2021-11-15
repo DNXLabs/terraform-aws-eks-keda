@@ -27,10 +27,10 @@
 |------|-------------|------|---------|:--------:|
 | create\_namespace | Whether to create k8s namespace with name defined by `namespace`. | `bool` | `true` | no |
 | enabled | n/a | `bool` | `true` | no |
-| helm\_chart\_name | Keda chart name. | `string` | `"kedacore/keda"` | no |
+| helm\_chart\_name | Keda chart name. | `string` | `"keda"` | no |
 | helm\_chart\_release\_name | keda release name. | `string` | `"keda"` | no |
 | helm\_chart\_repo | keda repository name. | `string` | `"https://kedacore.github.io/charts"` | no |
-| helm\_chart\_version | keda chart version. | `string` | `"2.2.1"` | no |
+| helm\_chart\_version | keda chart version. | `string` | `"2.4.0"` | no |
 | mod\_dependency | Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable. | `any` | `null` | no |
 | namespace | Kubernetes namespace to deploy EKS Spot termination handler Helm chart. | `string` | `"keda"` | no |
 | settings | Additional settings which will be passed to the Helm chart values, see https://keda.sh/docs/2.0/deploy/#helm. | `map` | `{}` | no |
